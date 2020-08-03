@@ -35,7 +35,7 @@ git clone https://github.com/autimio/rgb-web
 yarn install
 ```
 
-3. Run the application
+2. Run the application
 
 ```sh
 yarn start

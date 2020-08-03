@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { FaCopy } from 'react-icons/fa';
+import React, { useState } from "react";
 
-import InputText from './components/atoms/InputText';
-import './styles.css';
+import InputText from "./components/atoms/InputText";
+import "./styles.css";
 
 function App() {
   const [redValue, setRedValue] = useState(0);
@@ -11,16 +10,16 @@ function App() {
 
   function onChangeInputText(color, event) {
     if (event.target.value === isNaN) return;
-    if (event.target.value > 255) return alert('Opa, numero passou do limite!');
+    if (event.target.value > 255) return alert("Opa, numero passou do limite!");
 
     switch (color) {
-      case 'red':
+      case "red":
         setRedValue(event.target.value);
         break;
-      case 'green':
+      case "green":
         setGreenValue(event.target.value);
         break;
-      case 'blue':
+      case "blue":
         setBlueValue(event.target.value);
         break;
       default:
@@ -31,7 +30,7 @@ function App() {
   function rgbToHex(rgb) {
     var hex = Number(rgb).toString(16);
     if (hex.length < 2) {
-      hex = '0' + hex;
+      hex = "0" + hex;
     }
     return hex;
   }
@@ -52,41 +51,41 @@ function App() {
     >
       <div class="box">
         <InputText
-          label={'Red'}
-          name={'red'}
-          color={'red'}
-          type={'number'}
+          label={"Red"}
+          name={"red"}
+          color={"red"}
+          type={"number"}
           value={redValue}
           maxLength={3}
-          onChange={(event) => onChangeInputText('red', event)}
+          onChange={(event) => onChangeInputText("red", event)}
         />
 
         <InputText
-          label={'Green'}
-          name={'green'}
-          color={'green'}
-          type={'number'}
+          label={"Green"}
+          name={"green"}
+          color={"green"}
+          type={"number"}
           value={greenValue}
           maxLength={3}
-          onChange={(event) => onChangeInputText('green', event)}
+          onChange={(event) => onChangeInputText("green", event)}
         />
 
         <InputText
-          label={'Blue'}
-          name={'blue'}
-          color={'blue'}
-          type={'number'}
+          label={"Blue"}
+          name={"blue"}
+          color={"blue"}
+          type={"number"}
           value={blueValue}
           maxLength={3}
-          onChange={(event) => onChangeInputText('blue', event)}
+          onChange={(event) => onChangeInputText("blue", event)}
         />
       </div>
 
       <label id="text-hexadecimal-color">
         Hexadecimal Color:
         <label id="text-hexadecimal-color-result">
-          {' '}
-          {fullColorHex(redValue, greenValue, blueValue)}{' '}
+          {" "}
+          {fullColorHex(redValue, greenValue, blueValue)}{" "}
         </label>
       </label>
       {/* <FaCopy color="green" /> */}

@@ -43,9 +43,9 @@ yarn start
 
 ## Demo
 
-![rbg2hexgif](https://github.com/autimio/rbg2hex/blob/master/demo/demo-rgb.gif)
+![rgb2hexgif](https://github.com/autimio/rgb2hex/blob/master/demo/demo-rgb.gif)
 
-Application available in [rbg2hex](https://rgb-to-hex-converter.netlify.app/)
+Application available in [rgb2hex](https://rgb-to-hex-converter.netlify.app/)
 
 ## License
 

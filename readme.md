@@ -43,7 +43,7 @@ yarn start
 
 ## Demo
 
-![rgb2hexgif](https://github.com/autimio/rgb2hex/blob/master/demo/demo-rgb.gif)
+![rgb2hexgif](https://raw.githubusercontent.com/autimio/rgb2hex/master/demo/demo-rgb.gif)
 
 Application available in [rgb2hex](https://rgb-to-hex-converter.netlify.app/)
 

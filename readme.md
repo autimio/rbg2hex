@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fd4d77a3-56b8-4624-a2a4-f835f9fa4383/deploy-status)](https://app.netlify.com/sites/rgb-to-hex-converter/deploys)
 
-# RGB-WEB
+# RGB2HEX
 
 ## About The Project
 
@@ -43,9 +43,9 @@ yarn start
 
 ## Demo
 
-![demo](https://github.com/autimio/rbg-web/blob/master/demo/demo-rgb.gif)
+![rgb2hexgif](https://raw.githubusercontent.com/autimio/rgb2hex/master/demo/demo-rgb.gif)
 
-Application available in [rgb-to-hex](https://rgb-to-hex-converter.netlify.app/)
+Application available in [rgb2hex](https://autimio.github.io/rgb2hex/)
 
 ## License
 

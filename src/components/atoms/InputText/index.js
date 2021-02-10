@@ -1,5 +1,5 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
 function InputText({
   label,
@@ -29,8 +29,8 @@ function InputText({
 }
 
 InputText.defaultProps = {
-  type: 'text',
-  color: 'black',
+  type: "text",
+  color: "black",
   value: 0,
   min: 0,
   max: 255,

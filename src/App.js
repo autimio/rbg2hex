@@ -3,16 +3,17 @@ import React, { useState } from "react";
 import InputText from "./components/atoms/InputText";
 import "./styles.css";
 
+const MAX_VALUE = 255;
+
 function App() {
   const [redValue, setRedValue] = useState(0);
   const [greenValue, setGreenValue] = useState(0);
   const [blueValue, setBlueValue] = useState(0);
 
   function onChangeInputText(event, setState) {
-    const { value } = event.target;
-    if (value === isNaN) return;
-    if (value > 255) return alert("Opa, numero passou do limite!");
-    setState(value);
+    const value = event.target.value;
+    if (value === isNaN || value > MAX_VALUE) return;
+    setState(value)
   }
 
   function base10Tobase16(number) {
@@ -37,41 +38,37 @@ function App() {
     >
       <div class="box">
         <InputText
-          label={"Red"}
-          name={"red"}
-          color={"red"}
-          type={"number"}
+          label="Red"
+          name="red"
+          color="red"
+          type="number"
           value={redValue}
           maxLength={3}
           onChange={(event) => onChangeInputText(event, setRedValue)}
         />
-
         <InputText
-          label={"Green"}
-          name={"green"}
-          color={"green"}
-          type={"number"}
+          label="Green"
+          name="green"
+          color="green"
+          type="number"
           value={greenValue}
           maxLength={3}
           onChange={(event) => onChangeInputText(event, setGreenValue)}
         />
-
         <InputText
-          label={"Blue"}
-          name={"blue"}
-          color={"blue"}
-          type={"number"}
+          label="Blue"
+          name="blue"
+          color="blue"
+          type="number"
           value={blueValue}
           maxLength={3}
           onChange={(event) => onChangeInputText(event, setBlueValue)}
         />
       </div>
-
       <label id="text-hexadecimal-color">
-        Hexadecimal Color:
+        Hexadecimal Color: 
         <label id="text-hexadecimal-color-result">
-          {" "}
-          {colorHex(redValue, greenValue, blueValue)}
+          {` ${colorHex(redValue, greenValue, blueValue)}`}
         </label>
       </label>
     </div>
